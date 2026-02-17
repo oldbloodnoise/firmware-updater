@@ -261,9 +261,9 @@ var firmwareFile = null;
         let fwSection = document.querySelector("#fwselect");
         let fwFiles = document.getElementById("firmwareFiles");
 
-        //uploadButton.classList.add("hidden");
-        //downloadButton.classList.add("hidden");
-        //fwSection.classList.add("hidden");
+        uploadButton.classList.add("hidden");
+        downloadButton.classList.add("hidden");
+        fwSection.classList.add("hidden");
 
         let fromLandingPage = false;
 
@@ -492,7 +492,7 @@ var firmwareFile = null;
                             readServerFirmwareFile(newestFirmware[pedalName]).then((buffer) => {
                                 firmwareFile = buffer;
                             });     
-                            //downloadButton.classList.remove("hidden");
+                            downloadButton.classList.remove("hidden");
                         }
                     }
                     else {
