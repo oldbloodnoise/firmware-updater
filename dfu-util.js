@@ -497,7 +497,8 @@ var firmwareFile = null;
                     }
                     else {
                         logInfo("Could not identify pedal: " + fw);
-                        downloadButton.classList.remove("hidden");
+                        //downloadButton.classList.remove("hidden");
+                        uploadButton.classList.remove("hidden");
                         //fwSection.classList.remove("hidden");
                     }
 
