@@ -274,12 +274,12 @@ var firmwareFile = null;
 
         let manifestationTolerant = true;
 
-        let fwBaseUrl = "https://andyothling.github.io/firmware-updater/firmware/"
+        let fwBaseUrl = "https://oldbloodnoise.github.io/firmware-updater/firmware/"
         let newestFirmware = {
-            DarkStar: `${fwBaseUrl}DarkStar-3-0L-firmware.bin`,
-            BlackFountain: `${fwBaseUrl}BlackFountain-4-0D-firmware.bin`,
-            Bathing: `${fwBaseUrl}Bathing-1-0D-firmware.bin`,
-            Sunlight: `${fwBaseUrl}Sunlight-2-4E-firmware.bin`,
+            DarkStar: `${fwBaseUrl}DarkStar-3-0M-firmware.bin`,
+            BlackFountain: `${fwBaseUrl}BlackFountain-4-0E-firmware.bin`,
+            Bathing: `${fwBaseUrl}Bathing-1-0E-firmware.bin`,
+            Sunlight: `${fwBaseUrl}Sunlight-2-4F-firmware.bin`,
             Parting: `${fwBaseUrl}Parting-1-0B-firmware.bin`,
         }
 
@@ -423,10 +423,10 @@ var firmwareFile = null;
             let Parting = "Parting";
 
             let newest = {
-                BlackFountain: "4.0D",
-                DarkStar: "3.0L",
-                Sunlight: "2.4E",
-                Bathing: "1.0D",
+                BlackFountain: "4.0E",
+                DarkStar: "3.0M",
+                Sunlight: "2.4F",
+                Bathing: "1.0E",
                 Parting: "1.0B"
             }
 
@@ -434,14 +434,18 @@ var firmwareFile = null;
                 "008362291841819763": [BlackFountain, "4.0B"],
                 "00836331851824563": [BlackFountain, "4.0C"],
                 "00836971861812164": [BlackFountain, "4.0D"],
+                "008361251791821763": [BlackFountain, "4.0E"],
                 "008361771881816966": [DarkStar, "3.0J"],
                 "0083673189181767": [DarkStar, "3.0K"],
                 "00836651871815367": [DarkStar, "3.0L"],
+                "008361491821815368": [DarkStar, "3.0M"],
                 "00836811971821371": [Sunlight, "2.4B"],
                 "00836201197182972": [Sunlight, "2.4C"],
                 "00836249197187772": [Sunlight, "2.4D"],
                 "00836253197186972": [Sunlight, "2.4E"],
+                "008362171921821372": [Sunlight, "2.4F"],
                 "00836291941819769": [Bathing, "1.0D"],
+                "00836221188182970": [Bathing, "1.0E"],
                 "00836512208137119": [Parting, "1.0A"],
                 "008365312208185119": [Parting, "1.0B"]
             };
@@ -498,7 +502,7 @@ var firmwareFile = null;
                     else {
                         logInfo("Could not identify pedal: " + fw);
                         //downloadButton.classList.remove("hidden");
-                        uploadButton.classList.remove("hidden");
+                        //uploadButton.classList.remove("hidden");
                         //fwSection.classList.remove("hidden");
                     }
 
