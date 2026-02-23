@@ -240,6 +240,8 @@ var firmwareFile = null;
             var fname = path;
 
             raw.open("GET", fname, true);
+            raw.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+            raw.setRequestHeader('Access-Control-Allow-Origin', '*');
             raw.responseType = "arraybuffer";
             raw.onreadystatechange = function () {
                 if (this.readyState === 4 && this.status === 200) {
