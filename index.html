@@ -82,22 +82,32 @@
     </p>
     <div class="log" id="downloadLog"></div>
   </div>
-  <p>
-    <span id="instructions">
-      <h5>Instructions for Use</h5>
 
-      <ol>
-        <li>Connect your Old Blood pedal to the computer via USB cable.</li>
-        <li>Plug in 9V DC power to the pedal.</li>
-        <li>Click “Connect” below.</li>
-        <li>In the popup, select “DFU in FS Mode - Paired” then click “Connect”.</li>
-        <li>Version information will be displayed. If an update is available, click “Update” to apply it.</li>
-      </ol>
-      <b>Note:</b> updating firmware will NOT override user presets or global settings. If a full refresh is desired,
+  <div id="instructions">
+    <h5>Instructions for Use</h5>
+
+    <ol>
+      <li>Connect your Old Blood pedal to the computer via USB cable.</li>
+      <li>Plug in 9V DC power to the pedal.</li>
+      <li>Click “Connect” below.</li>
+      <li>In the popup, select “DFU in FS Mode - Paired” then click “Connect”.</li>
+      <li>Version information will be displayed. If an update is available, click “Update” to apply it.</li>
+    </ol>
+    <p><b>Note:</b> updating firmware will NOT override user presets or global settings. If a full refresh is desired,
       run a
-      factory reset after updating the firmware (see pedal instructions for the factory reset process).
-    </span>
-  </p>
+      factory reset after updating the firmware (see pedal instructions for the factory reset process).</p>
+    <p>If connecting an OBNE pedal for the first time on a Windows device, you may need to install a driver using Zadig
+      after following steps 1 and 2 (don’t worry, it’s quick and free).
+    <ol>
+      <li>Download Zadig and open it</li>
+      <li>In Zadig, select Options->List All Devices</li>
+      <li>In the drop down menu, select “DFU in FS Mode”</li>
+      <li>Click “Install Driver” (this may be labeled “Update Driver”)</li>
+      <li>Wait for installation to complete, then resume the process of the OBNE firmware update at step 3</li>
+    </ol>
+    </p>
+  </div>
+
 
   <p>
   <div id="troubleshooting">
