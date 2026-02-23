@@ -485,8 +485,7 @@ var firmwareFile = null;
                     if (pedalIdentifier.hasOwnProperty(fw)) {
                         pedalName = pedalIdentifier[fw][0];
                         pedalVersion = pedalIdentifier[fw][1];
-                        logInfo("Detected pedal: " + pedalName);
-                        logInfo("Version: " + pedalVersion);
+                        logInfo("Detected pedal: " + pedalName + "v" + pedalVersion);
 
                         pedalName = pedalName.replace(/\s/g, '');
 
