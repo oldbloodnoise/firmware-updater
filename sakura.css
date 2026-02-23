@@ -166,3 +166,7 @@ label, legend, fieldset {
 .hidden {
   display: none;
 }
+
+#updatercontent {
+  border: 1px solid black;
+}
