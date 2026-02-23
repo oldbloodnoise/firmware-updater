@@ -173,5 +173,5 @@ label, legend, fieldset {
 }
 
 #top {
-  display: inline-flex;
+  display: inline-block
 }
