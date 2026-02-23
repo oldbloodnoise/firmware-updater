@@ -276,7 +276,7 @@ var firmwareFile = null;
 
         let manifestationTolerant = true;
 
-        let fwBaseUrl = "https://oldbloodnoise.github.io/firmware-updater/firmware/"
+        let fwBaseUrl = "/firmware/"
         let newestFirmware = {
             DarkStar: `${fwBaseUrl}DarkStar-3-0M-firmware.bin`,
             BlackFountain: `${fwBaseUrl}BlackFountain-4-0E-firmware.bin`,
