@@ -34,7 +34,9 @@
       src="https://images.squarespace-cdn.com/content/6467b64a7c9d9e5cdae9a3ea/483fc396-6e35-4454-96eb-1ff564e9e73d/OBNE+-+Horizontal+OBNE+_W+Wordmark+Long_Underline.png?content-type=image%2Fpng">
   </p>
   <p>
-    <span id="title"><h1>Firmware Updater</h1></span>
+    <span id="title">
+      <h1>Firmware Updater</h1>
+    </span>
   </p>
   <p>
     <span id="instructions">
@@ -51,50 +53,52 @@
       factory reset after updating the firmware (see pedal instructions for the factory reset process).
     </span>
   </p>
-  <p>
-    <span id="status"></span>
-  </p>
-  <p>
-    <button id="connect">Connect</button>
-  </p>
+  <div id="updatercontent">
+    <p>
+      <span id="status"></span>
+    </p>
+    <p>
+      <button id="connect">Connect</button>
+    </p>
 
-  <div class="log" id="uploadLog"></div>
+    <div class="log" id="uploadLog"></div>
 
-  <p>
-    <button id="upload" disabled="true">Download BIN File from pedal</button>
-  </p>
+    <p>
+      <button id="upload" disabled="true">Download BIN File from pedal</button>
+    </p>
 
-  <dialog id="interfaceDialog">
-    Your device has multiple DFU interfaces. Select one from the list below:
-    <form id="interfaceForm" method="dialog">
-      <button id="selectInterface" type="submit">Select interface</button>
-    </form>
-  </dialog>
-  <p>
-  <div id="usbInfo" style="white-space: pre"></div>
-  <div id="dfuInfo" style="white-space: pre"></div>
-  </p>
+    <dialog id="interfaceDialog">
+      Your device has multiple DFU interfaces. Select one from the list below:
+      <form id="interfaceForm" method="dialog">
+        <button id="selectInterface" type="submit">Select interface</button>
+      </form>
+    </dialog>
+    <p>
+    <div id="usbInfo" style="white-space: pre"></div>
+    <div id="dfuInfo" style="white-space: pre"></div>
+    </p>
 
-  <p>
-  <div id="fwselect">
-    <label>Firmware:</label>
+    <p>
+    <div id="fwselect">
+      <label>Firmware:</label>
 
-    <select id="firmwareFiles">
-      <option value="DarkStar">Dark Star</option>
-      <option value="BlackFountain">Black Fountain</option>
-      <option value="Bathing">Bathing</option>
-      <option value="Sunlight">Sunlight</option>
-      <option value="Parting">Parting</option>
-    </select>
+      <select id="firmwareFiles">
+        <option value="DarkStar">Dark Star</option>
+        <option value="BlackFountain">Black Fountain</option>
+        <option value="Bathing">Bathing</option>
+        <option value="Sunlight">Sunlight</option>
+        <option value="Parting">Parting</option>
+      </select>
+    </div>
+    </p>
+
+    <p>
+      <button id="download" disabled="true">Update</button>
+    </p>
+    <div class="log" id="downloadLog"></div>
   </div>
-  </p>
-
   <p>
-    <button id="download" disabled="true">Update</button>
-  </p>
-  <div class="log" id="downloadLog"></div>
-  <p>
-    <span id="troubleshooting">
+    <div id="troubleshooting">
       <h3>Troubleshooting:</h3>
       <b>There is no option for DFU in FS Mode when I click connect</b><br>
       Make sure you are plugging in USB before plugging in the pedal’s 9V DC power. Also make sure the USB cable is a
@@ -105,40 +109,45 @@
       <b>The pedal isn’t lighting up after plugging in power</b><br>
       This is normal behavior when USB has been plugged in first. The pedal will not boot up (leaving LEDs unlit)
       because it is awaiting connection to the computer.<br><br>
-    </span>
+    </div>
   </p>
   <p>
-    <span id="patchnotes">
+    <div id="patchnotes">
       <h3>Patch notes:</h3>
-      <b>DARK STAR</b>
+      <details>
+      <summary>Dark Star</summary>
       <ul>
-      <li>Added preset recall on startup</li>
-      <li>Improved issues with MIDI message misalignment</li>
-      <li>Improved issues with preset recall</li>
+        <li>Added preset recall on startup</li>
+        <li>Improved issues with MIDI message misalignment</li>
+        <li>Improved issues with preset recall</li>
       </ul>
+      </details>
 
       <b>BLACK FOUNTAIN</b>
       <ul>
-      <li>Fixed MIDI channel recall bug</li>
-      <li>Improved issues with MIDI message misalignment</li>
-      <li>Improved issues with preset recall</li>
+        <li>Fixed MIDI channel recall bug</li>
+        <li>Improved issues with MIDI message misalignment</li>
+        <li>Improved issues with preset recall</li>
       </ul>
 
       <b>SUNLIGHT</b>
       <ul>
-      <li>Fixed subdivision recall issue for subdivisions above 1x. (Note: with previously saved presets, subdivisions will
-      now be recalled much faster. To fix this, simply recall the preset, change the subdivision without changing any
-      other settings, then overwrite the preset.)</li>
-      <li>Fixed issue with dynamic hold staying on while the pedal is turned off in trails mode</li>
+        <li>Fixed subdivision recall issue for subdivisions above 1x. (Note: with previously saved presets, subdivisions
+          will
+          now be recalled much faster. To fix this, simply recall the preset, change the subdivision without changing
+          any
+          other settings, then overwrite the preset.)</li>
+        <li>Fixed issue with dynamic hold staying on while the pedal is turned off in trails mode</li>
       </ul>
 
       <b>BATHING</b>
       <ul>
-      <li>Improved taper of Wet and Dry volume knobs (note: this may adjust volume of previously saved presets, and is an
-      optional update)</li>
+        <li>Improved taper of Wet and Dry volume knobs (note: this may adjust volume of previously saved presets, and is
+          an
+          optional update)</li>
       </ul>
 
-    </span>
+    </div>
   </p>
 </body>
 
