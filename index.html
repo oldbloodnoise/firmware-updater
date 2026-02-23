@@ -30,10 +30,25 @@
 
 <body>
   <p>
-    <img width=300 src="https://images.squarespace-cdn.com/content/6467b64a7c9d9e5cdae9a3ea/483fc396-6e35-4454-96eb-1ff564e9e73d/OBNE+-+Horizontal+OBNE+_W+Wordmark+Long_Underline.png?content-type=image%2Fpng">
+    <img width=300
+      src="https://images.squarespace-cdn.com/content/6467b64a7c9d9e5cdae9a3ea/483fc396-6e35-4454-96eb-1ff564e9e73d/OBNE+-+Horizontal+OBNE+_W+Wordmark+Long_Underline.png?content-type=image%2Fpng">
   </p>
   <p>
     <span id="title">Firmware Updater</span>
+  </p>
+  <p>
+    <span id="instructions">Instructions for Use:
+
+      <ol>
+        <li>Connect your Old Blood pedal to the computer via USB cable.</li>
+        <li>Plug in 9V DC power to the pedal.</li>
+        <li>Click “Connect” below.</li>
+        <li>In the popup, select “DFU in FS Mode - Paired” then click “Connect”.</li>
+        <li>Version information will be displayed. If an update is available, click “Update” to apply it.</li>
+      </ol>
+      Note: updating firmware will NOT override user presets or global settings. If a full refresh is desired, run a
+      factory reset after updating the firmware (see pedal instructions for the factory reset process).
+    </span>
   </p>
   <p>
     <span id="status"></span>
@@ -59,22 +74,68 @@
   <div id="dfuInfo" style="white-space: pre"></div>
   </p>
 
-  <p><div id="fwselect">
+  <p>
+  <div id="fwselect">
     <label>Firmware:</label>
-    
+
     <select id="firmwareFiles">
       <option value="DarkStar">Dark Star</option>
       <option value="BlackFountain">Black Fountain</option>
       <option value="Bathing">Bathing</option>
       <option value="Sunlight">Sunlight</option>
       <option value="Parting">Parting</option>
-    </select></div>
+    </select>
+  </div>
   </p>
 
   <p>
     <button id="download" disabled="true">Update</button>
   </p>
   <div class="log" id="downloadLog"></div>
+  <p>
+    <span id="troubleshooting">Troubleshooting:
+      <b>There is no option for DFU in FS Mode when I click connect</b>
+      Make sure you are plugging in USB before plugging in the pedal’s 9V DC power. Also make sure the USB cable is a
+      data cable, not a charging-only cable.
+      <b>My pedal isn’t recognized</b>
+      Please reach out to us at contact@oldbloodnoise.com, and include the number given in the error message, name of
+      pedal, and serial number (if available).
+      <b>The pedal isn’t lighting up after plugging in power</b>
+      This is normal behavior when USB has been plugged in first. The pedal will not boot up (leaving LEDs unlit)
+      because it is awaiting connection to the computer.
+    </span>
+  </p>
+  <p>
+    <span id="patchnotes">
+      Patch notes–
+      <b>DARK STAR</b>
+      <ul>
+      <li>Added preset recall on startup</li>
+      <li>Improved issues with MIDI message misalignment</li>
+      <li>Improved issues with preset recall</li>
+      </ul>
+
+      <b>BLACK FOUNTAIN</b>
+      <ul>
+      <li>Fixed MIDI channel recall bug</li>
+      <li>Improved issues with MIDI message misalignment</li>
+      <li>Improved issues with preset recall</li>
+      </ul>
+
+      <b>SUNLIGHT</b>
+      <ul>
+      <li>Fixed subdivision recall issue for subdivisions above 1x. (Note: with previously saved presets, subdivisions will
+      now be recalled much faster. To fix this, simply recall the preset, change the subdivision without changing any
+      other settings, then overwrite the preset.)</li>
+      <li>Fixed issue with dynamic hold staying on while the pedal is turned off in trails mode</li>
+      </ul>
+
+      <b>BATHING</b>
+      <li>Improved taper of Wet and Dry volume knobs (note: this may adjust volume of previously saved presets, and is an
+      optional update)</li>
+
+    </span>
+  </p>
 </body>
 
 </html>
