@@ -620,6 +620,7 @@ var firmwareFile = null;
         downloadButton.addEventListener('click', async function (event) {
             event.preventDefault();
             event.stopPropagation();
+            downloadButton.classList.add("hidden");
 
             if (device && firmwareFile != null) {
                 setLogContext(downloadLog);
