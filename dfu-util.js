@@ -652,7 +652,8 @@ var firmwareFile = null;
                         }
                     },
                     error => {
-                        logError(error);
+                        //logError(error);
+                        console.log(error);
                         setLogContext(null);
                     }
                 )
