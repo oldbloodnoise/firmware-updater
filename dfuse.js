@@ -275,7 +275,7 @@ var dfuse = {};
         try {
             await this.poll_until(state => (state == dfu.dfuMANIFEST));
         } catch (error) {
-            this.logError(error);
+            console.log(error);
         }
     }
 
