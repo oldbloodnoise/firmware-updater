@@ -659,7 +659,7 @@ var firmwareFile = null;
                 )
             }
 
-            //return false;
+            return false;
         });
 
         // Check if WebUSB is available
