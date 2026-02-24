@@ -427,7 +427,7 @@ var firmwareFile = null;
             let newest = {
                 BlackFountain: "4.0E",
                 DarkStar: "3.0M",
-                Sunlight: "2.4F",
+                Sunlight: "2.4G",
                 Bathing: "1.0E",
                 Parting: "1.0B"
             }
@@ -446,6 +446,7 @@ var firmwareFile = null;
                 "00836249197187772": [Sunlight, "2.4D"],
                 "00836253197186972": [Sunlight, "2.4E"],
                 "008362171921821372": [Sunlight, "2.4F"],
+                "008361211921812572": [Sunlight, "2.4G"],
                 "00836291941819769": [Bathing, "1.0D"],
                 "00836221188182970": [Bathing, "1.0E"],
                 "00836512208137119": [Parting, "1.0A"],
@@ -503,7 +504,7 @@ var firmwareFile = null;
                     else {
                         logInfo("Could not identify pedal: " + fw);
                         //downloadButton.classList.remove("hidden");
-                        uploadButton.classList.remove("hidden");
+                        //uploadButton.classList.remove("hidden");
                         //fwSection.classList.remove("hidden");
                     }
 
