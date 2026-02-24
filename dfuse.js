@@ -218,7 +218,7 @@ var dfuse = {};
             throw "No memory map available";
         }
 
-        this.logInfo("Erasing pedal memory");
+        this.logInfo("Clearing old firmware");
         
         let bytes_sent = 0;
         let expected_size = data.byteLength;

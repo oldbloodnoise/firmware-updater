@@ -36,11 +36,44 @@
     </div>
     <div style="width:400px; float:right; text-align: right;">
 
-      <span><h3>Firmware Updater</h3></span>
+      <span>
+        <h3>Firmware Updater</h3>
+      </span>
 
     </div>
   </div>
   <div style="clear: both;"></div>
+
+  <div id="instructions">
+    <h5>Instructions for Use</h5>
+
+
+    <ol>
+      <li>Connect your Old Blood pedal to the computer via USB cable.</li>
+      <li>Plug in 9V DC power to the pedal.</li>
+      <li>Click “Connect” below.</li>
+      <li>In the popup, select “DFU in FS Mode - Paired” then click “Connect”.</li>
+      <li>Version information will be displayed. If an update is available, click “Update” to apply it.</li>
+    </ol>
+    <p>
+      <b>Note:</b> updating firmware will NOT override user presets or global settings. If a full refresh is desired,
+      run a
+      factory reset after updating the firmware (see pedal instructions for the factory reset process).
+    </p>
+    <p>
+      <b>If connecting an OBNE pedal for the first time on a Windows device</b>, you may need to install a driver
+      using Zadig
+      after following steps 1 and 2 (don’t worry, it’s quick and free).
+    </p>
+    <ol>
+      <li>Download <a href="https://zadig.akeo.ie/">Zadig</a> and open it</li>
+      <li>In Zadig, select Options->List All Devices</li>
+      <li>In the drop down menu, select “DFU in FS Mode”</li>
+      <li>Click “Install Driver” (this may be labeled “Update Driver”)</li>
+      <li>Wait for installation to complete, then resume the process of the OBNE firmware update at step 3</li>
+    </ol>
+
+  </div>
 
   <div id="updatercontent">
     <p>
@@ -87,36 +120,7 @@
     <div class="log" id="downloadLog"></div>
   </div>
 
-  <div id="instructions">
-    <h5>Instructions for Use</h5>
-    <details>
-      <summary>Expand</summary>
-      <ol>
-        <li>Connect your Old Blood pedal to the computer via USB cable.</li>
-        <li>Plug in 9V DC power to the pedal.</li>
-        <li>Click “Connect” below.</li>
-        <li>In the popup, select “DFU in FS Mode - Paired” then click “Connect”.</li>
-        <li>Version information will be displayed. If an update is available, click “Update” to apply it.</li>
-      </ol>
-      <p>
-        <b>Note:</b> updating firmware will NOT override user presets or global settings. If a full refresh is desired,
-        run a
-        factory reset after updating the firmware (see pedal instructions for the factory reset process).
-      </p>
-      <p>
-        <b>If connecting an OBNE pedal for the first time on a Windows device</b>, you may need to install a driver
-        using Zadig
-        after following steps 1 and 2 (don’t worry, it’s quick and free).
-      </p>
-      <ol>
-        <li>Download <a href="https://zadig.akeo.ie/">Zadig</a> and open it</li>
-        <li>In Zadig, select Options->List All Devices</li>
-        <li>In the drop down menu, select “DFU in FS Mode”</li>
-        <li>Click “Install Driver” (this may be labeled “Update Driver”)</li>
-        <li>Wait for installation to complete, then resume the process of the OBNE firmware update at step 3</li>
-      </ol>
-    </details>
-  </div>
+
 
 
   <div id="troubleshooting">
