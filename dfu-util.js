@@ -281,7 +281,7 @@ var firmwareFile = null;
             DarkStar: `${fwBaseUrl}DarkStar-3-0M-firmware.bin`,
             BlackFountain: `${fwBaseUrl}BlackFountain-4-0E-firmware.bin`,
             Bathing: `${fwBaseUrl}Bathing-1-0E-firmware.bin`,
-            Sunlight: `${fwBaseUrl}Sunlight-2-4F-firmware.bin`,
+            Sunlight: `${fwBaseUrl}Sunlight-2-4G-firmware.bin`,
             Parting: `${fwBaseUrl}Parting-1-0B-firmware.bin`,
         }
 
