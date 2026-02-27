@@ -279,8 +279,8 @@ var firmwareFile = null;
         let fwBaseUrl = "/firmware/"
         let newestFirmware = {
             DarkStar: `${fwBaseUrl}DarkStar-3-0M-firmware.bin`,
-            BlackFountain: `${fwBaseUrl}BlackFountain-4-0E-firmware.bin`,
-            Bathing: `${fwBaseUrl}Bathing-1-0E-firmware.bin`,
+            BlackFountain: `${fwBaseUrl}BlackFountain-4-0F-firmware.bin`,
+            Bathing: `${fwBaseUrl}Bathing-1-0F-firmware.bin`,
             Sunlight: `${fwBaseUrl}Sunlight-2-4G-firmware.bin`,
             Parting: `${fwBaseUrl}Parting-1-0B-firmware.bin`,
         }
@@ -425,10 +425,10 @@ var firmwareFile = null;
             let Parting = "Parting";
 
             let newest = {
-                BlackFountain: "4.0E",
+                BlackFountain: "4.0F",
                 DarkStar: "3.0M",
                 Sunlight: "2.4G",
-                Bathing: "1.0E",
+                Bathing: "1.0F",
                 Parting: "1.0B"
             }
 
@@ -437,6 +437,7 @@ var firmwareFile = null;
                 "00836331851824563": [BlackFountain, "4.0C"],
                 "00836971861812164": [BlackFountain, "4.0D"],
                 "008361251791821763": [BlackFountain, "4.0E"],
+                "008361411861812164": [BlackFountain, "4.0F"],
                 "008361771881816966": [DarkStar, "3.0J"],
                 "0083673189181767": [DarkStar, "3.0K"],
                 "00836651871815367": [DarkStar, "3.0L"],
@@ -449,6 +450,7 @@ var firmwareFile = null;
                 "008361211921812572": [Sunlight, "2.4G"],
                 "00836291941819769": [Bathing, "1.0D"],
                 "00836221188182970": [Bathing, "1.0E"],
+                "00836253188186170": [Bathing, "1.0F"],
                 "00836512208137119": [Parting, "1.0A"],
                 "008365312208185119": [Parting, "1.0B"]
             };
