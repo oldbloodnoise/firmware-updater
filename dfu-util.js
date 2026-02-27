@@ -278,7 +278,7 @@ var firmwareFile = null;
 
         let fwBaseUrl = "/firmware/"
         let newestFirmware = {
-            DarkStar: `${fwBaseUrl}DarkStar-3-0M-firmware.bin`,
+            DarkStar: `${fwBaseUrl}DarkStar-3-0Q-firmware.bin`,
             BlackFountain: `${fwBaseUrl}BlackFountain-4-0F-firmware.bin`,
             Bathing: `${fwBaseUrl}Bathing-1-0F-firmware.bin`,
             Sunlight: `${fwBaseUrl}Sunlight-2-4G-firmware.bin`,
@@ -426,7 +426,7 @@ var firmwareFile = null;
 
             let newest = {
                 BlackFountain: "4.0F",
-                DarkStar: "3.0M",
+                DarkStar: "3.0Q",
                 Sunlight: "2.4G",
                 Bathing: "1.0F",
                 Parting: "1.0B"
@@ -442,6 +442,7 @@ var firmwareFile = null;
                 "0083673189181767": [DarkStar, "3.0K"],
                 "00836651871815367": [DarkStar, "3.0L"],
                 "008361491821815368": [DarkStar, "3.0M"],
+                "008361251831812969": [DarkStar, "3.0Q"],
                 "00836811971821371": [Sunlight, "2.4B"],
                 "00836201197182972": [Sunlight, "2.4C"],
                 "00836249197187772": [Sunlight, "2.4D"],
@@ -506,7 +507,7 @@ var firmwareFile = null;
                     else {
                         logInfo("Could not identify pedal: " + fw);
                         //downloadButton.classList.remove("hidden");
-                        uploadButton.classList.remove("hidden");
+                        //uploadButton.classList.remove("hidden");
                         //fwSection.classList.remove("hidden");
                     }
 
