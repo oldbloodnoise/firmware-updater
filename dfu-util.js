@@ -461,8 +461,56 @@ var firmwareFile = null;
                 "00836512208137119": [Parting, "1.0A"],
                 "008365312208185119": [Parting, "1.0B"],
                 "008361691220845120": [Parting, "1.0C"],
-                "1234": [Setback, "1.0A"],
+                "008362051901814570": [Setback, "1.0A"],
                 "008362451901819370": [Setback, "1.0B"],
+            };
+
+            let patchNotes = {
+                DarkStar: 
+                {
+                    "3.0J": "Initial production version",
+                    "3.0K": "Fixed pot override issue on initial preset recall",
+                    "3.0L": "Improved processing speed and memory storage routines",
+                    "3.0M": "Fixed issue where unity pitch would not be recalled correctly from preset",
+                    "3.0Q": "Fixed new pitch recall issues from 3.0M, improved factory reset",
+                    "3.0R": "Fixes issue where restart of external MIDI controlling device would halt MIDI communication until restart of OBNE device"
+                },
+                BlackFountain: 
+                {
+                    "1.0B": "Initial production version",
+                    "1.0C": "Fixed issue with MIDI channel recall on startup",
+                    "1.0D": "Fixed conflict with knob settings when recalling presets",
+                    "1.0E": "Added override for scooch-as-tap-tempo when assigning new expression setting",
+                    "1.0F": "Fixed issue from 1.0E where some bug fixes were reverted back",
+                    "1.0G": "Fixed issue where restart of external MIDI controlling device would halt MIDI communication until restart of OBNE device",
+                },
+                Bathing:
+                {
+                    "1.0D": "Initial production version",
+                    "1.0E": "Improved taper of wet and dry knobs",
+                    "1.0F": "Fixed issue with noise occurring on right output when stages set to 5 and rate above zero",
+                    "1.0G": "Fixed issue where restart of external MIDI controlling device would halt MIDI communication until restart of OBNE device",
+                },
+                Sunlight:
+                {
+                    "2.4B": "Early demo units only",
+                    "2.4C": "Initial production version",
+                    "2.4D": "When holding trails with Aux, allowed movement of Decay knob to override the hold",
+                    "2.4E": "Fixed conflict between expression control of Decay knob and using Aux to hold trails",
+                    "2.4F": "Fixed issue with subdivision recall for subdivisions faster than x1\nFixed issue where dynamically held trails would repeat indefinitely after turning pedal off in trails mode",
+                    "2.4G": "Fixed rate recall issue when preset was stored after changing rate knob",
+                    "2.4H": "Fixed issue where restart of external MIDI controlling device would halt MIDI communication until restart of OBNE device",
+                },
+                Parting:
+                {
+                    "1.0B": "Initial production version",
+                    "1.0C": "Fixes issue where restart of external MIDI controlling device would halt MIDI communication until restart of OBNE device\nFixed issue with Rate storing incorrectly in preset when rate subdivisions aren’t x1",
+                },
+                Setback:
+                {
+                    "1.0A": "First production version",
+                    "1.0B": "Fixed issue where restart of external MIDI controlling device would halt MIDI communication until restart of OBNE device",
+                }
             };
 
             if (!device || !device.device_.opened) {
@@ -507,6 +555,8 @@ var firmwareFile = null;
                         }
                         else {
                             logInfo("Update available.");
+                            logInfo("Newest version is " + newest[pedalName]);
+                            logInfo(patchNotes[pedalName][newest[pedalName]]);
                             readServerFirmwareFile(newestFirmware[pedalName]).then((buffer) => {
                                 firmwareFile = buffer;
                             });     
