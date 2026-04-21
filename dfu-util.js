@@ -559,6 +559,7 @@ var firmwareFile = null;
                             logInfo("Update available.");
                             logInfo("Newest version is " + newest[pedalName]);
                             logInfo(patchNotes[pedalName][newest[pedalName]]);
+                            logInfo("<i>See full patch notes below</i>");
                             readServerFirmwareFile(newestFirmware[pedalName]).then((buffer) => {
                                 firmwareFile = buffer;
                             });
