@@ -423,13 +423,15 @@ var firmwareFile = null;
             let Bathing = "Bathing";
             let Sunlight = "Sunlight";
             let Parting = "Parting";
+            let Setback = "Setback";
 
             let newest = {
-                BlackFountain: "4.0F",
-                DarkStar: "3.0Q",
-                Sunlight: "2.4G",
-                Bathing: "1.0F",
-                Parting: "1.0B"
+                BlackFountain: "4.0G",
+                DarkStar: "3.0R",
+                Sunlight: "2.4H",
+                Bathing: "1.0G",
+                Parting: "1.0C",
+                Setback: "1.0B"
             }
 
             let pedalIdentifier = {
@@ -438,22 +440,29 @@ var firmwareFile = null;
                 "00836971861812164": [BlackFountain, "4.0D"],
                 "008361251791821763": [BlackFountain, "4.0E"],
                 "008361411861812164": [BlackFountain, "4.0F"],
+                "008362131801814564": [BlackFountain, "4.0G"],
                 "008361771881816966": [DarkStar, "3.0J"],
                 "0083673189181767": [DarkStar, "3.0K"],
                 "00836651871815367": [DarkStar, "3.0L"],
                 "008361491821815368": [DarkStar, "3.0M"],
                 "008361251831812969": [DarkStar, "3.0Q"],
+                "008362171831817769": [DarkStar, "3.0R"],
                 "00836811971821371": [Sunlight, "2.4B"],
                 "00836201197182972": [Sunlight, "2.4C"],
                 "00836249197187772": [Sunlight, "2.4D"],
                 "00836253197186972": [Sunlight, "2.4E"],
                 "008362171921821372": [Sunlight, "2.4F"],
                 "008361211921812572": [Sunlight, "2.4G"],
+                "008361611921816572": [Sunlight, "2.4H"],
                 "00836291941819769": [Bathing, "1.0D"],
                 "00836221188182970": [Bathing, "1.0E"],
                 "00836253188186170": [Bathing, "1.0F"],
+                "00836213188181370": [Bathing, "1.0G"],
                 "00836512208137119": [Parting, "1.0A"],
-                "008365312208185119": [Parting, "1.0B"]
+                "008365312208185119": [Parting, "1.0B"],
+                "008361691220845120": [Parting, "1.0C"],
+                "1234": [Setback, "1.0A"],
+                "008362451901819370": [Setback, "1.0B"],
             };
 
             if (!device || !device.device_.opened) {
