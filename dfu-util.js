@@ -307,12 +307,12 @@ var firmwareFile = null;
             },
             BlackFountain:
             {
-                "1.0B": "Initial production version",
-                "1.0C": "Fixed issue with MIDI channel recall on startup",
-                "1.0D": "Fixed conflict with knob settings when recalling presets",
-                "1.0E": "Added override for scooch-as-tap-tempo when assigning new expression setting",
-                "1.0F": "Fixed issue from 1.0E where some bug fixes were reverted back",
-                "1.0G": "Fixed issue where restart of external MIDI controlling device would halt MIDI communication until restart of OBNE device",
+                "4.0B": "Initial production version",
+                "4.0C": "Fixed issue with MIDI channel recall on startup",
+                "4.0D": "Fixed conflict with knob settings when recalling presets",
+                "4.0E": "Added override for scooch-as-tap-tempo when assigning new expression setting",
+                "4.0F": "Fixed issue from 1.0E where some bug fixes were reverted back",
+                "4.0G": "Fixed issue where restart of external MIDI controlling device would halt MIDI communication until restart of OBNE device",
             },
             Bathing:
             {
@@ -559,7 +559,7 @@ var firmwareFile = null;
                             logInfo("Update available.");
                             logInfo("Newest version is " + newest[pedalName]);
                             logInfo(patchNotes[pedalName][newest[pedalName]]);
-                            logInfo("<i>See full patch notes below</i>");
+                            logInfo("See full patch notes below");
                             readServerFirmwareFile(newestFirmware[pedalName]).then((buffer) => {
                                 firmwareFile = buffer;
                             });
