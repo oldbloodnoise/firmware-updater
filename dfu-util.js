@@ -277,7 +277,7 @@ var firmwareFile = null;
         let manifestationTolerant = true;
 
         let newest = {
-            BlackFountain: "4.0G",
+            BlackFountain: "4.0H",
             DarkStar: "3.0R",
             Sunlight: "2.4H",
             Bathing: "1.0G",
@@ -288,7 +288,7 @@ var firmwareFile = null;
         let fwBaseUrl = "/firmware/"
         let newestFirmware = {
             DarkStar: `${fwBaseUrl}DarkStar-3-0R-firmware.bin`,
-            BlackFountain: `${fwBaseUrl}BlackFountain-4-0G-firmware.bin`,
+            BlackFountain: `${fwBaseUrl}BlackFountain-4-0H-firmware.bin`,
             Bathing: `${fwBaseUrl}Bathing-1-0G-firmware.bin`,
             Sunlight: `${fwBaseUrl}Sunlight-2-4H-firmware.bin`,
             Parting: `${fwBaseUrl}Parting-1-0C-firmware.bin`,
@@ -313,6 +313,7 @@ var firmwareFile = null;
                 "4.0E": "Added override for scooch-as-tap-tempo when assigning new expression setting",
                 "4.0F": "Fixed issue from 1.0E where some bug fixes were reverted back",
                 "4.0G": "Fixed issue where restart of external MIDI controlling device would halt MIDI communication until restart of OBNE device",
+                "4.0H": "Fixed issue where restart of external MIDI controlling device would halt MIDI communication until restart of OBNE device",
             },
             Bathing:
             {
@@ -491,6 +492,7 @@ var firmwareFile = null;
                 "008361251791821763": [BlackFountain, "4.0E"],
                 "008361411861812164": [BlackFountain, "4.0F"],
                 "008362131801814564": [BlackFountain, "4.0G"],
+                "008361891801812164": [BlackFountain, "4.0H"],
                 "008361771881816966": [DarkStar, "3.0J"],
                 "0083673189181767": [DarkStar, "3.0K"],
                 "00836651871815367": [DarkStar, "3.0L"],
