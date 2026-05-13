@@ -313,7 +313,7 @@ var firmwareFile = null;
                 "4.0E": "Added override for scooch-as-tap-tempo when assigning new expression setting",
                 "4.0F": "Fixed issue from 1.0E where some bug fixes were reverted back",
                 "4.0G": "Fixed issue where restart of external MIDI controlling device would halt MIDI communication until restart of OBNE device",
-                "4.0H": "Fixed issue where restart of external MIDI controlling device would halt MIDI communication until restart of OBNE device",
+                "4.0H": "Fixed issue where factory reset would not reset subdivisions to quarter note",
             },
             Bathing:
             {
