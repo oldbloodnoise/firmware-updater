@@ -281,7 +281,7 @@ var firmwareFile = null;
             DarkStar: "3.0R",
             Sunlight: "2.4H",
             Bathing: "1.0G",
-            Parting: "1.0C",
+            Parting: "1.0D",
             Setback: "1.0B"
         }
 
@@ -291,7 +291,7 @@ var firmwareFile = null;
             BlackFountain: `${fwBaseUrl}BlackFountain-4-0H-firmware.bin`,
             Bathing: `${fwBaseUrl}Bathing-1-0G-firmware.bin`,
             Sunlight: `${fwBaseUrl}Sunlight-2-4H-firmware.bin`,
-            Parting: `${fwBaseUrl}Parting-1-0C-firmware.bin`,
+            Parting: `${fwBaseUrl}Parting-1-0D-firmware.bin`,
             Setback: `${fwBaseUrl}Setback-1-0B-firmware.bin`,
         }
 
@@ -336,6 +336,7 @@ var firmwareFile = null;
             {
                 "1.0B": "Initial production version",
                 "1.0C": "Fixes issue where restart of external MIDI controlling device would halt MIDI communication until restart of OBNE device\nFixed issue with Rate storing incorrectly in preset when rate subdivisions aren’t x1",
+                "1.0D": "Fixed issue where MIDI clock would prevent triggering of moments of chance\nFixed issue where switching into live mode using the Aux footswitch as a preset switcher would not correctly recall certain parameters\nMade Half Speed mode for Aux footswitch momentary or latching in both directions - a switch press switches it from half to normal and vice versa, a switch hold will switch it only while holding then return to the previous setting on release",
             },
             Setback:
             {
