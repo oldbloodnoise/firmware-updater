@@ -491,6 +491,7 @@ var firmwareFile = null;
             let Sunlight = "Sunlight";
             let Parting = "Parting";
             let Setback = "Setback";
+            let BeamSplitter = "BeamSplitter";
 
             let pedalIdentifier = {
                 "008362291841819763": [BlackFountain, "4.0B"],
