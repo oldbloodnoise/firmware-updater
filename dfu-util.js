@@ -282,7 +282,8 @@ var firmwareFile = null;
             Sunlight: "2.4H",
             Bathing: "1.0G",
             Parting: "1.0D",
-            Setback: "1.0B"
+            Setback: "1.0B",
+            BeamSplitter: "2.0C"
         }
 
         let fwBaseUrl = "/firmware/"
@@ -293,6 +294,7 @@ var firmwareFile = null;
             Sunlight: `${fwBaseUrl}Sunlight-2-4H-firmware.bin`,
             Parting: `${fwBaseUrl}Parting-1-0D-firmware.bin`,
             Setback: `${fwBaseUrl}Setback-1-0B-firmware.bin`,
+            BeamSplitter: `${fwBaseUrl}BeamSplitter-2-0C-firmware.bin`,
         }
 
         let patchNotes = {
@@ -342,6 +344,10 @@ var firmwareFile = null;
             {
                 "1.0A": "First production version",
                 "1.0B": "Fixed issue where restart of external MIDI controlling device would halt MIDI communication until restart of OBNE device",
+            },
+            BeamSplitter:
+            {
+                "2.0C": "Initial production version",
             }
         };
 
@@ -517,6 +523,10 @@ var firmwareFile = null;
                 "0083612112308253120": [Parting, "1.0D"],
                 "008362051901814570": [Setback, "1.0A"],
                 "008362451901819370": [Setback, "1.0B"],
+                "0083661980814195": [BeamSplitter, "2Beta.2B"],
+                "0083685980816595": [BeamSplitter, "2.0A"],
+                "00836133980821395": [BeamSplitter, "2.0B"],
+                "00836141980822195": [BeamSplitter, "2.0C"],
             };
 
             if (!device || !device.device_.opened) {
