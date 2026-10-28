@@ -284,7 +284,8 @@ var firmwareFile = null;
             Parting: "1.0D",
             Setback: "1.0B",
             BeamSplitter: "2.0C",
-            Iota: "1.0B"
+            Iota: "1.0B",
+            Float: "2.0B",
         }
 
         let fwBaseUrl = "/firmware/"
@@ -297,6 +298,7 @@ var firmwareFile = null;
             Setback: `${fwBaseUrl}Setback-1-0B-firmware.bin`,
             BeamSplitter: `${fwBaseUrl}BeamSplitter-2-0C-firmware.bin`,
             Iota: `${fwBaseUrl}Iota-1-0B-firmware.bin`,
+            Float: `${fwBaseUrl}Float-2-0B-firmware.bin`,
         }
 
         let patchNotes = {
@@ -355,7 +357,11 @@ var firmwareFile = null;
             {
                 "1.0A": "Early demo units",
                 "1.0B": "Initial production version",
-            }
+            },
+            Float:
+            {
+                "V2.0B": "Initial production version"
+            },
         };
 
 
@@ -539,6 +545,7 @@ var firmwareFile = null;
                 "00836141980822195": [BeamSplitter, "2.0C"],
                 "008368511408101111": [Iota, "1.0A"],
                 "0083614111408157111": [Iota, "1.0B"],
+                "06403214916408249160": [Float, "2.0B"],
             };
 
             if (!device || !device.device_.opened) {
