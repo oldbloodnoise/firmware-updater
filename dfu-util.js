@@ -283,7 +283,8 @@ var firmwareFile = null;
             Bathing: "1.0G",
             Parting: "1.0D",
             Setback: "1.0B",
-            BeamSplitter: "2.0C"
+            BeamSplitter: "2.0C",
+            Iota: "1.0B"
         }
 
         let fwBaseUrl = "/firmware/"
@@ -295,6 +296,7 @@ var firmwareFile = null;
             Parting: `${fwBaseUrl}Parting-1-0D-firmware.bin`,
             Setback: `${fwBaseUrl}Setback-1-0B-firmware.bin`,
             BeamSplitter: `${fwBaseUrl}BeamSplitter-2-0C-firmware.bin`,
+            Iota: `${fwBaseUrl}Iota-1-0B-firmware.bin`,
         }
 
         let patchNotes = {
@@ -348,6 +350,11 @@ var firmwareFile = null;
             BeamSplitter:
             {
                 "2.0C": "Initial production version",
+            },
+            Iota:
+            {
+                "1.0A": "Early demo units",
+                "1.0B": "Initial production version",
             }
         };
 
@@ -492,6 +499,8 @@ var firmwareFile = null;
             let Parting = "Parting";
             let Setback = "Setback";
             let BeamSplitter = "BeamSplitter";
+            let Iota = "Iota";
+            let Float = "Float";
 
             let pedalIdentifier = {
                 "008362291841819763": [BlackFountain, "4.0B"],
@@ -528,6 +537,8 @@ var firmwareFile = null;
                 "0083685980816595": [BeamSplitter, "2.0A"],
                 "00836133980821395": [BeamSplitter, "2.0B"],
                 "00836141980822195": [BeamSplitter, "2.0C"],
+                "008368511408101111": [Iota, "1.0A"],
+                "0083614111408157111": [Iota, "1.0B"],
             };
 
             if (!device || !device.device_.opened) {
